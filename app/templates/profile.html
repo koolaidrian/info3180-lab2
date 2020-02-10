@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+
+{% block css %}
+
+<link rel = "stylesheet" type = "text/css" href = "{{url_for('static',filename='css/Profile.css')}}">
+
+{%endblock%}
+
+{% block main %}
+
+
+
+<div class = "profilePanel">
+    <div id = "subPanel1">
+        <img id = "profilePic"src = "{{ url_for('static',filename = 'profile pic1.jpg')}}">
+        <h1>Chanderpaul Campbell</h1>
+        <h3>@I.T_Guy</h3>
+        <h3>Kingstion,Jamaica</h3>
+        <h3> {{date}}</h3>
+
+    </div>
+        
+    
+
+    <div id = "subPanel2"class = "bottomEdge">
+        <div class = "subPanelContent">
+            <div id = "SPC1">
+                <p>Information Technology and Computer Science enthusiast. Contact for group or individual sessions. Affordable rates!</p>
+            </div>
+
+            <div id = "SPC2">
+                <div class = "box">
+                    <div id = "post">
+    
+                        <h4>8</h4>
+                        <h5>Post</h5>
+    
+                    </div>
+    
+                    <div id = "following">
+    
+                        <h4>100</h4>
+                        <h5>Following</h5>
+                        
+                    </div>
+    
+                    <div id = "followers">
+    
+                        <h4>70</h4>
+                        <h5>Followers</h5>
+                        
+                    </div>
+                </div> 
+            </div>
+
+            <div id = "SPC3" class = "bottomEdge">
+                <button id = "follower-btn" type = "button">Follow</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}
